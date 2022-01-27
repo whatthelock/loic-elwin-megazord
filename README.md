@@ -1,6 +1,6 @@
 # loic-elwin-megazord
 
-![#Caravan Palace](/assets/logo.jpg)
+![#Caravan Palace](/images/logo.jpg)
 
 [Optimisation Web - Megazord](https://smnarnold.com/projets/megazord)
 
