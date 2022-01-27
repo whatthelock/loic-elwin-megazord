@@ -2,7 +2,7 @@
 
 ![#Caravan Palace](/assets/logo.jpg)
 
-[Optimisation Web](https://smnarnold.com/projets/megazord)
+[Optimisation Web - Megazord](https://smnarnold.com/projets/megazord)
 
 ## Équipe
 1. Loïc Delorme (Rouge)
