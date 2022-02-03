@@ -1,27 +1,35 @@
+@font-face {
+    src: url("../NeonSans.woff2") format("woff2");
+    font-family: "NeonSans";
+  }
+
 :root { --rose: #FF33AD; }
 :root { --pourpre: #D90368; }
 :root { --mauve: #6700A3; }
 :root { --violet: #733BCE; }
 :root { --crayola: #7374D4; }
-:root { --texte: Comfortaa; }
-:root { --titre: Comfortaa; }
+:root { --texte: Raleway; }
+:root { --titre: NeonSans; }
 
 body{
-    font-size: 16px;
+    font-size: 18px;
     font-family: var(--texte);
 }
 
 .title-1{
-    font-size: 45px;
+    font-size: 100px;
     font-family: var(--titre);
+    color: var(--mauve);
 }
 
 .title-2{
-    font-size: 32px;
+    font-size: 75px;
     font-family: var(--titre);
+    color: var(--violet);
 }
 
 .title-3{
-    font-size: 24px;
+    font-size: 40px;
     font-family: var(--titre);
+    color: var(--crayola);
 }
