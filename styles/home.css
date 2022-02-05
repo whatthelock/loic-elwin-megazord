@@ -19,6 +19,7 @@ main{
 picture{
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
 .image{
@@ -34,11 +35,22 @@ picture{
     }
 }
 .contraste{
-    background-color: #000;
+    background-color: var(--rose);
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 18%;
+    opacity: 50%;
+}
+
+.container , .row{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.title-1{
+    text-align: center;
+    line-height: 0.8;
 }
