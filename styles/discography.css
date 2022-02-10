@@ -9,19 +9,6 @@ main{
 }
 
 
-@media (min-width: 1000px) {
-    body {
-        height: 56.25vh;
-    }
-}
-
-.heros{
-    width: 100%;
-    height: 100%;
-    position: relative;
-    
-} 
-
 picture{
     width: 100%;
     height: 100%;
@@ -30,14 +17,21 @@ picture{
 }
 
 .image{
-    width: 100%;
-    object-fit: scale-down;
-    object-position: 50% 0%;
+    width: 50%;
+    height: 80%;
+    object-fit: cover;
+    object-position: 20% 50%;
+    top: 0;
+    right: 50vh;
+    position: absolute;
 }
 
-@media screen and (min-width: 1000px) { 
+@media (min-width: 1000px) { 
     body { background: black; }
-    
+    main {
+        height: 56.25vw;
+    }
+   
   }
 
   .contraste {
@@ -46,6 +40,37 @@ picture{
       position: absolute;
       top: 0;
       left: 0;
-      background: linear-gradient(to bottom, transparent, rgba(255 , 0, 0, 0.5));
-     opacity: 50%;
+      background: linear-gradient(to bottom, transparent, rgb(255, 12, 12) 50%);
+      opacity: 70%;
   }
+
+  .container , .row{
+    width: 100%;
+    height: 90%;
+    position: absolute;
+}
+
+  .title-1{
+    text-align: center;
+    line-height: 0.8;
+}
+
+.desc{
+    text-align: center;
+    font-weight: 700;
+    color: white;
+}
+
+.savoir{
+    position: relative;
+    left: 50%;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 15px 35px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--pourpre);
+    margin-top: 30px;
+    transform: translateX(-50%);
+}
