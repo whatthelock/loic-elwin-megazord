@@ -7,19 +7,19 @@
 :root { --pourpre: #D90368; }
 :root { --mauve: #6700A3; }
 :root { --violet: #733BCE; }
-:root { --crayola: #7374D4; }
+:root { --crayola: #79aeff; }
 :root { --texte: Raleway; }
 :root { --titre: NeonSans; }
 
 body{
-    font-size: 18px;
+    font-size: 19px;
     font-family: var(--texte);
 }
 
 .title-1{
-    font-size: 80px;
+    font-size: 85px;
     font-family: var(--titre);
-    color: var(--mauve);
+    color: var(--rose);
     font-weight: 800;
 }
 
