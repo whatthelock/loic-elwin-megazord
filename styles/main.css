@@ -1,36 +1,58 @@
 @font-face {
     src: url("../NeonSans.woff2") format("woff2");
     font-family: "NeonSans";
-  }
+}
 
-:root { --rose: #FF33AD; }
-:root { --pourpre: #D90368; }
-:root { --mauve: #6700A3; }
-:root { --violet: #733BCE; }
-:root { --crayola: #79aeff; }
-:root { --texte: Raleway; }
-:root { --titre: NeonSans; }
+:root {
+    --rose: #FF33AD;
+}
 
-body{
+:root {
+    --pourpre: #D90368;
+}
+
+:root {
+    --mauve: #6700A3;
+}
+
+:root {
+    --violet: #733BCE;
+}
+
+:root {
+    --crayola: #79aeff;
+}
+
+:root {
+    --texte: Raleway;
+}
+
+:root {
+    --titre: NeonSans;
+}
+
+body {
     font-size: 19px;
     font-family: var(--texte);
 }
 
-.title-1{
+.title-1 {
     font-size: 85px;
     font-family: var(--titre);
     color: var(--rose);
     font-weight: 800;
 }
 
-.title-2{
+.title-2 {
     font-size: 50px;
     font-family: var(--titre);
     color: var(--violet);
+    font-weight: 800;
 }
 
-.title-3{
+.title-3 {
     font-size: 30px;
     font-family: var(--titre);
     color: var(--crayola);
+    font-weight: 800;
 }

@@ -1,37 +1,37 @@
-body{
+body {
     width: 100vw;
     height: 100vh;
     overflow-x: hidden;
+    background-color: rgb(29, 29, 29);
 }
 
-main{
+header {
     width: 100vw;
     height: 100vh;
     position: relative;
     background-color: #ccc;
 }
 
-
-picture{
+picture {
     width: 100%;
     height: 100%;
     position: absolute;
 }
 
-.image{
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
     object-position: 39% 50%;
 }
 
-@media (orientation: landscape) { 
+@media (orientation: landscape) {
     main {
         height: 56.25vw;
     }
 }
 
-.contraste{
+.contraste {
     background-image: linear-gradient(to top, var(--crayola), var(--rose));
     position: absolute;
     width: 100%;
@@ -41,27 +41,30 @@ picture{
     opacity: 50%;
 }
 
-.container , .row{
+.container,
+.row-hero {
     width: 100%;
     height: 100%;
     position: relative;
 }
 
-.title-1{
+.container-card {
+    height: auto;
+}
+
+.title-1 {
     text-align: center;
     line-height: 0.8;
 }
 
-.desc{
+.desc {
     text-align: center;
     color: rgb(235, 235, 235);
     font-weight: 700;
 }
 
-.savoir_plus{
+.savoir_plus {
     border: 1px solid #fff;
-    font-weight: bold;
-    color: #fff;
     background-color: var(--pourpre);
     padding: 15px 35px;
     margin-top: 30px;
@@ -70,9 +73,59 @@ picture{
     position: relative;
     transform: translateX(-50%);
     font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
 }
 
-.navbar{
+.navbar {
     background-image: linear-gradient(to right, var(--mauve), var(--pourpre));
     opacity: 85%;
+}
+
+.animation {
+    width: 100%;
+}
+
+main {
+    padding: 40px;
+}
+
+footer {
+    background-color: var(--rose);
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    margin: 10px 0px;
+}
+
+.image-carte {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+.luca {
+    object-position: 50% 50%;
+}
+
+.button-carte {
+    border: none;
+    background-color: var(--pourpre);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
 }
