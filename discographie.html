@@ -59,6 +59,7 @@
     </div>
   </nav>
  
+ 
 
 
   <main id="animation">
@@ -66,11 +67,18 @@
       <div class="row">
 
         <div class="col col-md-9">
+        
           
-            <section>
+          
+  <section>
     <div class="container">
       <div class="row"> 
+        <section class="video"> 
+          <h1> Vidéo </h1>
+          <iframe width="640" height="360"  src="https://www.youtube.com/embed/vCXsRoyFRQE"></iframe>
+        </section> 
         <div class="col-6 col-sm-7">
+          
           <img class="panic" src="images/panic.jpg" >
          </div>
     
@@ -167,9 +175,9 @@
           <div class="container"> 
             <div class="row justify-content-center align-items-center">
               <div class="col-lg-6 ">
-                <ul>
-                  <li>Loic Delorme</li>
-                  <li>Elwin Durand</li>  
+                <ul >
+                  <li class="credits" >Loic Delorme</li>
+                  <button type="button" class="credits"  data-bs-toggle="modal" data-bs-target="elwinmodal">Elwin Durand</button> 
                 </ul>
               </div>
               <div class="col-lg-6 ">
@@ -187,6 +195,7 @@
 
       </div>
     </div>
+    
   </main>
   
 
@@ -197,19 +206,31 @@
 
 
 
+  <div class="modal fade" id="elwinmodal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+
+        <div class="modal-header">
+          <h2 class="modal-title">Elwin Durand</h2>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <img src="images/elwin.JPG">
+        </div>
+
+      </div>
+    </div>
+  </div>
 
 
 
-        
 
-
-
-
-
-
-
+  
 
     <script src="scripts/discography.js"></script>
     <script src="scripts/main.js"></script>
+
+    
 </body>
 </html>

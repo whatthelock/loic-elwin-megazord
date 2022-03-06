@@ -113,3 +113,11 @@ section {
     width: 100%;
     margin-top: 20px;
 }
+
+.video {
+    margin-bottom: 40px;
+}
+
+.credits:hover {
+color: var(--pourpre);
+}
