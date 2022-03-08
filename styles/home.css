@@ -129,3 +129,36 @@ footer {
     text-decoration: none;
     width: 100%;
 }
+
+.videoFilm {
+    width: calc(90% + 25px);
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.boiteVid {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  margin-top: 20px;
+  margin-left: 5px;
+  position: relative;
+}
+
+.nom{
+    color: #fff;
+    transition-property: color;
+}
+
+.nom:hover{
+    color: #000;
+}
+
+.imgModal{
+    width: 300px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
