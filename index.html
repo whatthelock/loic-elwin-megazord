@@ -11,6 +11,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
         crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -73,6 +74,9 @@
                     <h1 class="title-2">Membres du groupe</h1>
                 </div>
                 <div class="row">
+                    <div class="col-12">
+                        <h2 class="card-title title-2">Images promotionnelles</h2>
+                    </div>
                     <div class="col-12 col-sm-6">
                         <div class="card">
                             <img src="images/zoe.jpg" class="card-img-top image-carte">
@@ -162,20 +166,20 @@
                         </div>
                     </div>
                 </div>
+                <section class="col-12">
+                    <h2 class="title-2">Video</h2>
+                    <div class="boiteVid">
+                        <iframe src="https://www.youtube.com/embed/vlpLgjnRPhI" title="YouTube video player"
+                            frameborder="0"
+                            allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen class="videoFilm">
+                        </iframe>
+                    </div>
+                </section>
             </section>
 
         </div>
-        <div class="row">
-            <div class="col-md-3 d-none d-md-block"></div>
-            <section class="col col-md-9">
-                <h2 class="title-2">Video</h2>
-                <div class="boiteVid">
-                    <iframe src="https://www.youtube.com/embed/vlpLgjnRPhI" title="YouTube video player" frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowfullscreen class="videoFilm">
-                    </iframe>
-                </div>
-            </section>
+
         </div>
     </main>
 
@@ -226,6 +230,11 @@
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {})
+    </script>
     <script src="scripts/discography.js"></script>
     <script src="scripts/main.js"></script>
 </body>
