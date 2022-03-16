@@ -18,12 +18,7 @@ main{
  margin: 40px;
 }
 
-picture{
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background-color: var(--crayola);
-}
+
 
 .image {
     width: 100%;
@@ -161,3 +156,10 @@ color: var(--pourpre);
     margin-left: auto;
     margin-right: auto;
 }
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: var(--crayola);
+  }
