@@ -43,6 +43,7 @@ main{
       left: 0;
       background: linear-gradient(to bottom, transparent, rgb(255, 12, 12) 50%);
       opacity: 70%;
+      z-index: 10;
   }
 
   .container , .row{
@@ -139,41 +140,25 @@ color: var(--pourpre);
     margin-top: 20px;
     margin-left: 5px;
     position: relative;
-  }
-
-  .video{
-      margin-bottom: 30px;
-  }
-
-  ol{
-      color: #fff;
-  }
-
-  .imgModal{
-    width: 300px;
-    display: block;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
 }
 
+.video{
+    margin-bottom: 30px;
+}
+
+ol{
+    color: #fff;
+}
+
+.imgModal{
+width: 300px;
+display: block;
+position: relative;
+margin-left: auto;
+margin-right: auto;
+}
 
 .swiper {
     width: 100%;
-}
-
-.swiper-slide{
-    aspect-ratio: 16 / 9 ;
-    width: 100%;
-}
-
-.sliderImages{
-    object-fit: cover;
     height: 100%;
-    width: 100%;
-}
-
-.swiper-pagination-bullet{
-    background-color: var(--mauve);
-    opacity: 100%;
 }
