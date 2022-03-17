@@ -70,13 +70,42 @@
             </aside>
 
             <section class="col col-md-9">
+                <section class="row">
+                    <div class="row">
+                        <h2 class="card-title title-2">Images promotionnelles</h2>
+                    </div>
+                    <div class="row">
+                        <div class="swiper">
+                            <!-- Additional required wrapper -->
+                            <div class="swiper-wrapper">
+                                <!-- Slides -->
+                                <div class="swiper-slide">
+                                    <div class="container-slider">
+                                        <img src="/images/caravan_strep.jpg" class="sliderImages">
+                                    </div>
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/Caravan-Palace-caroussel-1.jpg" class="sliderImages">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/caravanpalace_19_1024-1024x576.jpg" class="sliderImages">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/caravanpalace_wide.jpg" class="sliderImages">
+                                </div>
+                                <div class="swiper-slide">
+                                    <img src="/images/caravan_palace.jpg" class="sliderImages">
+                                </div>
+                            </div>
+                            <!-- If we need pagination -->
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                </section>
                 <div class="row">
                     <h1 class="title-2">Membres du groupe</h1>
                 </div>
                 <div class="row">
-                    <div class="col-12">
-                        <h2 class="card-title title-2">Images promotionnelles</h2>
-                    </div>
                     <div class="col-12 col-sm-6">
                         <div class="card">
                             <img src="images/zoe.jpg" class="card-img-top image-carte">
@@ -230,11 +259,21 @@
             </div>
         </div>
     </footer>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
 
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
     <script>
-        var swiper = new Swiper(".mySwiper", {})
+        const swiper = new Swiper('.swiper', {
+            direction: 'horizontal',
+            pagination: {
+                el: '.swiper-pagination',
+                type: 'bullets',
+                bulletActiveClass: 'activeBullet',
+                clickable: 'true'
+            },
+
+        })
     </script>
+
     <script src="scripts/discography.js"></script>
     <script src="scripts/main.js"></script>
 </body>
