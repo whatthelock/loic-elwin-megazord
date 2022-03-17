@@ -48,7 +48,7 @@ main{
 
   .container , .row{
     width: 100%;
-    height: 100%;
+    height: 80%;
     position: relative;
 }
 
@@ -159,6 +159,12 @@ margin-right: auto;
 }
 
 .swiper {
+    width: 100%;
+    height: 100%;
+}
+
+.swiperImage {
+    object-fit: contain;
     width: 100%;
     height: 100%;
 }
