@@ -29,23 +29,24 @@
 <div class="swiper">
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
-    <!-- Slides -->
-    <div class="swiper-slide">Slide 1</div>
-    <div class="swiper-slide">Slide 2</div>
-    <div class="swiper-slide">Slide 3</div>
-    <div class="swiper-slide">Slide 4</div>
-    ...
+      <!-- Slides -->
+      <div class="swiper-slide">
+          <div class="container-slider">
+              <img src="/images/album1.jpg" class="sliderImages">
+          </div>
+      </div>
+      <div class="swiper-slide">
+          <img src="/images/album2.jpg" class="sliderImages">
+      </div>
+      <div class="swiper-slide">
+          <img src="/images/album3.jpg" class="sliderImages">
+      </div>
+      <div class="swiper-slide">
+          <img src="/images/panic.jpg" class="sliderImages">
+      </div>
+       <!-- If we need pagination -->
+       <div class="swiper-pagination"></div>
   </div>
-  <!-- If we need pagination -->
-  <div class="swiper-pagination"></div>
-
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
-  <!-- If we need scrollbar -->
-  <div class="swiper-scrollbar"></div>
-</div>
 
     <div class="contraste"></div>
     <div class="container">
@@ -238,6 +239,21 @@
       </div>
     </div>
   </footer>
+
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script>
+      const swiper = new Swiper('.swiper', {
+          direction: 'horizontal',
+          pagination: {
+              el: '.swiper-pagination',
+              type: 'bullets',
+              bulletActiveClass: 'activeBullet',
+              clickable: 'true'
+          },
+
+      })
+  </script>
 
   <script src="scripts/discography.js"></script>
   <script src="scripts/main.js"></script>

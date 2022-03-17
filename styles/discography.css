@@ -157,9 +157,23 @@ color: var(--pourpre);
     margin-right: auto;
 }
 
+
 .swiper {
     width: 100%;
+}
+
+.swiper-slide{
+    aspect-ratio: 16 / 9 ;
+    width: 100%;
+}
+
+.sliderImages{
+    object-fit: cover;
     height: 100%;
-    position: absolute;
-    background-color: var(--crayola);
-  }
+    width: 100%;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--mauve);
+    opacity: 100%;
+}
