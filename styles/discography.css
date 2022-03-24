@@ -41,7 +41,7 @@ main{
       position: absolute;
       top: 0;
       left: 0;
-      background: linear-gradient(to bottom, transparent, rgb(255, 12, 12) 50%);
+      background: linear-gradient(to bottom,  var(--rose), var(--crayola));
       opacity: 70%;
       
   }
