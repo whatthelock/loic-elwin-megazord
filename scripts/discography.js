@@ -44,4 +44,30 @@ gsap.timeline({
   });
 
   
+})
+
+let body = document.querySelector('body');
+let isScrolling;
+let animCoeur = document.querySelector('.anim');
+
+window.addEventListener('scroll', () => {
+    isScrolling = setTimeout( () => {
+        animCoeur.className = 'idle'
+    }, 250);
+});
+
+
+let anim = gsap.timeline({
+    scrollTrigger: {
+      trigger: '.animation',
+        onUpdate: (e) => {
+            if (e.progress) {
+                if(e.direction==-1){
+                    animCoeur.className = "up"
+                } else {
+                    animCoeur.className = "down"
+                }
+            }
+        }
+    }
 });
