@@ -33,5 +33,45 @@ sectionArr.forEach(function(section) {
       });
     });
 });
-
     
+
+
+// ***** TP06 ***** //
+
+const animation = document.querySelector('.animation-idle');
+let isScrolling;
+
+// ***** Instruction 2 ***** //
+window.addEventListener('scroll', function() {
+	window.clearTimeout( isScrolling );
+  animation.classList.add("is-scrolling");
+  
+  // ***** Instruction 3 ***** //
+	isScrolling = setTimeout(function() {
+		console.log( 'Scrolling has stopped.' );
+    animation.classList.remove("is-scrolling");
+	}, 250);
+});
+
+// ***** Instruction 1 ***** //
+let anim = gsap.timeline({
+  scrollTrigger: {
+    trigger: '.level',
+    
+    onUpdate: (e) => {
+      
+      if(e.progress){
+        // ***** Instruction 4 ***** //
+         if(e.direction==-1){
+          animation.classList.add("direction-up");
+          animation.classList.remove("direction-down");
+        }else{
+          // ***** Instruction 5 ***** //
+          animation.classList.add("direction-down");
+          animation.classList.remove("direction-up");
+        }
+      }
+    }
+  
+  }
+});
