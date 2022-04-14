@@ -107,31 +107,12 @@ ol{
 
 
 
-
-.up {
-    position: sticky;
-    top: 30%;
-    width: 400px;
-    height: 400px; 
-
-
-    background-image: url(../images/teterobot_scrollup.png);
-
-    animation-name: up;
-    animation-duration: 0.5s;
-    animation-iteration-count: infinite;
-    animation-timing-function: steps(24);
-}
-@keyframes up {
-    from { background-position: 0 0; }
-    to { background-position: 0 -10080px; }
-}
 .idle {
     position: sticky;
     top: 30%;
     width: 400px;
     height: 400px; 
-
+    animation-direction: alternate;
 
     background-image: url(../images/teterobot_idle.png);
     animation-name: idle;
@@ -143,12 +124,30 @@ ol{
     from { background-position: 0 0; }
     to { background-position: 0 -10080px; }
 }
+.up {
+    position: sticky;
+    top: 30%;
+    width: 400px;
+    height: 400px; 
+    animation-direction: alternate;
+
+    background-image: url(../images/teterobot_scrollup.png);
+
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+}
+@keyframes up {
+    from { background-position: 0 0; }
+    to { background-position: 0 -19200px; }
+}
 .down { 
     position: sticky;
     top: 30%;
     width: 400px;
     height: 400px;
-
+    animation-direction: alternate;
 
     background-image: url(../images/teterobot_scrolldown.png);
     animation-name: down;
@@ -158,5 +157,5 @@ ol{
 }
 @keyframes down {
     from { background-position: 0 0; }
-    to { background-position: 0 -10080px; }
+    to { background-position: 0 -19200px; }
 }
