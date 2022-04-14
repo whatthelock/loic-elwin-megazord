@@ -123,7 +123,7 @@ main {
 .animation-idle {
     width: 400px;
     height: 400px;
-    background-image: url("/images/idol.png");
+    background-image: url("../images/idol.png");
     background-size: 100% auto;
     animation-name: idle;
     animation-duration: 1s;
@@ -137,7 +137,7 @@ main {
 .is-scrolling.direction-up{
     width: 400px;
     height: 400px;
-    background-image: url("/images/scroll-up.png");
+    background-image: url("../images/scroll-up.png");
     background-size: 100% auto;
     animation-name: scroll;
     animation-duration: 2s;
@@ -149,7 +149,7 @@ main {
 .is-scrolling.direction-down{
     width: 400px;
     height: 400px;
-    background-image: url("/images/scroll-down.png");
+    background-image: url("../images/scroll-down.png");
     background-size: 100% auto;
     animation-name: scroll;
     animation-duration: 2s;
