@@ -1,35 +1,120 @@
 @font-face {
     src: url("../NeonSans.woff2") format("woff2");
     font-family: "NeonSans";
-  }
+}
 
-:root { --rose: #FF33AD; }
-:root { --pourpre: #D90368; }
-:root { --mauve: #6700A3; }
-:root { --violet: #733BCE; }
-:root { --crayola: #7374D4; }
-:root { --texte: Raleway; }
-:root { --titre: NeonSans; }
+:root {
+    --rose: #FF33AD;
+}
 
-body{
-    font-size: 18px;
+:root {
+    --pourpre: #D90368;
+}
+
+:root {
+    --mauve: #6700A3;
+}
+
+:root {
+    --violet: #733BCE;
+}
+
+:root {
+    --crayola: #79aeff;
+}
+
+:root {
+    --texte: Raleway;
+}
+
+:root {
+    --titre: NeonSans;
+}
+
+body {
+    font-size: 19px;
     font-family: var(--texte);
+    width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(29, 29, 29);
 }
 
-.title-1{
-    font-size: 100px;
+.title-1 {
+    font-size: 85px;
     font-family: var(--titre);
-    color: var(--mauve);
+    color: var(--rose);
+    font-weight: 800;
+    text-align: center;
+    line-height: 0.8;
 }
 
-.title-2{
-    font-size: 75px;
+.title-2 {
+    font-size: 50px;
     font-family: var(--titre);
     color: var(--violet);
+    font-weight: 800;
 }
 
-.title-3{
-    font-size: 40px;
+.title-3 {
+    font-size: 30px;
     font-family: var(--titre);
     color: var(--crayola);
+    font-weight: 800;
+}
+
+header {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    background-color: #ccc;
+}
+
+.desc {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+}
+
+
+.navbar {
+    background-image: linear-gradient(to right, var(--mauve), var(--pourpre));
+    opacity: 85%;
+}
+
+footer {
+    background-color: var(--rose);
+    padding: 20px;
+    margin-top: 20px;
+    color: #fff;
+}
+
+.videoFilm {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+.imgModal{
+    width: 300px;
+    display: block;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sliderImages {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+}
+
+.boiteVid {
+    /*width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;*/
+    aspect-ratio: 16 / 9;
+    margin-top: 20px;
+    margin-left: 5px;
+    position: relative;
 }

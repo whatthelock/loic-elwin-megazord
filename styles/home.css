@@ -1,44 +1,169 @@
-body{
+picture {
     width: 100%;
     height: 100%;
+    position: absolute;
 }
 
-main{
-    width: 100vw;
-    height: 100vh;
-    position: relative;
-    background-color: #ccc;
-}
-
-.hero{
-    width: 100%;
-    height: 100%;
-    position: relative;
-}
-
-picture{
-    width: 100%;
-    height: 100%;
-}
-
-.image{
+.image {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: 50% 30%;
+    object-position: 39% 50%;
 }
 
-@media (orientation: portrait) { 
-    body {
-        height: 56.25vh;
+@media (orientation: landscape) {
+    main {
+        height: 56.25vw;
     }
 }
-.contraste{
-    background-color: #000;
+
+.contraste {
+    background-image: linear-gradient(to top, var(--crayola), var(--rose));
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
-    opacity: 18%;
+    opacity: 50%;
+}
+
+.container,
+.row-hero {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.container-card {
+    height: auto;
+}
+
+.savoir_plus {
+    border: 1px solid #fff;
+    background-color: var(--pourpre);
+    padding: 15px 35px;
+    margin-top: 30px;
+    border-radius: 30px;
+    left: 50%;
+    position: relative;
+    transform: translateX(-50%);
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.animation {
+    width: 100%;
+}
+
+main {
+    padding: 40px;
+}
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+
+.card {
+    margin: 10px 0px;
+}
+
+.image-carte {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 50% 10%;
+}
+
+.luca {
+    object-position: 50% 50%;
+}
+
+.button-carte {
+    border: none;
+    background-color: var(--pourpre);
+    padding: 15px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nom{
+    color: #fff;
+    transition-property: color;
+}
+
+.nom:hover{
+    color: #000;
+}
+
+.swiper {
+    width: 100%;
+}
+
+.swiper-slide{
+    aspect-ratio: 16 / 9 ;
+    width: 100%;
+}
+
+.swiper-pagination-bullet{
+    background-color: var(--mauve);
+    opacity: 100%;
+}
+.activeBullet{
+    background-color: var(--rose);
+}
+
+.animation-idle {
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/idol.png");
+    background-size: 100% auto;
+    animation-name: idle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+    animation-direction: alternate;
+    position: sticky;
+    top: 60px;
+}
+
+.is-scrolling.direction-up{
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/scroll-up.png");
+    background-size: 100% auto;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+    animation-direction: alternate;
+}
+
+.is-scrolling.direction-down{
+    width: 400px;
+    height: 400px;
+    background-image: url("../images/scroll-down.png");
+    background-size: 100% auto;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(48);
+    animation-direction: alternate;
+}
+
+@keyframes idle {
+    from { background-position: 0 0; }
+    to { background-position: 0 -9600px; }
+}
+
+@keyframes scroll {
+    from { background-position: 0 0; }
+    to { background-position: 0 -19200px; }
 }

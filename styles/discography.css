@@ -1,15 +1,161 @@
-header {
-    width: 100%;
-    height: 100%;
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative; 
+ margin: 40px;
 }
 
-@media screen and (min-width: 56,25%) {
-    
-}
 
-picture {
+
+.image {
     width: 100%;
     height: 100%;
-    object-fit: fill;
-    background-color: blue;
+    object-fit: contain;
+    object-position: 39% 50%;
+}
+
+
+@media (orientation:landscape) { 
+    main {
+        height: 56.25vw;
+    }
+   
+  }
+
+  .contraste {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      background: linear-gradient(to bottom,  var(--rose), var(--crayola));
+      opacity: 70%;
+      
+  }
+
+  .container , .row{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.savoir{
+    position: relative;
+    font-size: 15px;
+    font-weight: bold;
+    border: 1px solid #fff;
+    padding: 15px 35px;
+    color: #fff;
+    border-radius: 10px;
+    background-color: var(--pourpre);
+    /*margin-top: 30px;
+    left: 50%;
+    transform: translateX(-50%);*/
+}
+
+.footer{
+    list-style:none;
+    line-height:1.6;
+    font-size:20px;
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    color: black;   
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: red;
+}
+
+
+.album {
+    margin: 20px 0;
+}
+
+.panic {
+    width: 100%;
+    margin-top: 20px;
+}
+
+
+.credits:hover {
+color: var(--pourpre);
+}
+
+.animation {
+    width: 100%;
+}
+
+.video{
+    margin-bottom: 30px;
+}
+
+ol{
+    color: #fff;
+}
+
+.swiper {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+
+
+.idle {
+    position: sticky;
+    top: 30%;
+    width: 400px;
+    height: 400px; 
+    animation-direction: alternate;
+
+    background-image: url(../images/teterobot_idle.png);
+    animation-name: idle;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+}
+@keyframes idle {
+    from { background-position: 0 0; }
+    to { background-position: 0 -10080px; }
+}
+.up {
+    position: sticky;
+    top: 30%;
+    width: 400px;
+    height: 400px; 
+    animation-direction: alternate;
+
+    background-image: url(../images/teterobot_scrollup.png);
+
+    animation-name: up;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+}
+@keyframes up {
+    from { background-position: 0 0; }
+    to { background-position: 0 -19200px; }
+}
+.down { 
+    position: sticky;
+    top: 30%;
+    width: 400px;
+    height: 400px;
+    animation-direction: alternate;
+
+    background-image: url(../images/teterobot_scrolldown.png);
+    animation-name: down;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(24);
+}
+@keyframes down {
+    from { background-position: 0 0; }
+    to { background-position: 0 -19200px; }
 }
