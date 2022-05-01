@@ -73,3 +73,38 @@ let anim = gsap.timeline({
         }
     }
 });
+
+let findtitre = document.querySelector('.findtitre');
+let findbtn =  document.querySelector('.recherche');
+let spinner = document.querySelector('.spinner');
+let parolesdiv = document.querySelector('.paroles');
+
+
+const newLineToBr = function(str) {
+  return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
+}
+
+findbtn.addEventListener('click', function(e){
+  e.preventDefault();
+  spinner.style.display = 'inline-block';
+  
+  if(findtitre.value == ''){
+    findtitre.value = "Veuillez mettre le nom d'un titre ici";
+    spinner.style.display = 'none';
+    
+  }
+  else{
+    fetch(`https://api.lyrics.ovh/v1/caravan palace/${findtitre.value}`) 
+    .then(data => data.json()) 
+    .then(actor => { 
+      const newParoles = newLineToBr(actor.lyrics)
+      spinner.style.display = 'none'
+      parolesdiv.innerHTML = `<br><h2> Paroles de: ${findtitre.value} </h2><br> ${newParoles};`
+    })
+    .catch(error => {
+      spinner.style.display = 'none'
+      parolesdiv.innerHTML = `Désolé, les paroles n'ont pu être trouvées. En voici la raison: ${error}`});
+  }
+})
+
+
