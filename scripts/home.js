@@ -75,3 +75,16 @@ let anim = gsap.timeline({
   
   }
 });
+
+const formParole = document.querySelector('.fromParole');
+
+formParole.addEventListener("submit", function(event) { 
+  console.log("La valeur du champs a changée");
+  event.preventDefault();
+  if(){
+
+  }
+  else{
+    
+  }
+});
