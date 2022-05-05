@@ -78,13 +78,28 @@ let anim = gsap.timeline({
 
 const formParole = document.querySelector('.fromParole');
 
-formParole.addEventListener("submit", function(event) { 
-  console.log("La valeur du champs a changée");
-  event.preventDefault();
-  if(){
+const text_paroles = document.querySelector('.parole');
 
+formParole.addEventListener("submit", function(event) { 
+  let input = document.querySelector('.form-control').value;
+  let spinner = document.querySelector('.spinner');
+  event.preventDefault();
+  const newLineToBr = function(str){
+    return str.replace(/(?:\r\n|\r|\n)/g, '<br>');
   }
-  else{
-    
+  if(input != ""){
+    spinner.style.display = 'block';
+    fetch(`https://api.lyrics.ovh/v1/caravan palace/${input}`) 
+      .then(data => 
+        data.json())
+      .then(result=>{
+        text_paroles.innerHTML = newLineToBr(result.lyrics);
+        spinner.style.display = 'none';
+      })
+      .catch(error => { 
+        spinner.style.display = 'none';
+        text_paroles.innerHTML = (`Désolé, les paroles n'ont pu être trouvées. En voici la raison:. ${error}`)
+      });
   }
 });
+//lone digger et wonderland

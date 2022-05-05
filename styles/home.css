@@ -178,3 +178,11 @@ main {
     color: #fff;
     text-decoration: none;
 }
+
+.parole{
+    color: #fff;
+}
+
+.spinner{
+    display: none;
+}
