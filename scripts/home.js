@@ -90,8 +90,7 @@ formParole.addEventListener("submit", function(event) {
   if(input != ""){
     spinner.style.display = 'block';
     fetch(`https://api.lyrics.ovh/v1/caravan palace/${input}`) 
-      .then(data => 
-        data.json())
+      .then(data => data.json())
       .then(result=>{
         text_paroles.innerHTML = newLineToBr(result.lyrics);
         spinner.style.display = 'none';
@@ -100,6 +99,6 @@ formParole.addEventListener("submit", function(event) {
         spinner.style.display = 'none';
         text_paroles.innerHTML = (`Désolé, les paroles n'ont pu être trouvées. En voici la raison:. ${error}`)
       });
-  }
+    }
 });
 //lone digger et wonderland
