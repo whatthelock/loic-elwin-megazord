@@ -107,7 +107,7 @@ ol{
 
 
 
-.idle {
+.animation-idle {
     position: sticky;
     top: 30%;
     width: 400px;
@@ -124,7 +124,7 @@ ol{
     from { background-position: 0 0; }
     to { background-position: 0 -10080px; }
 }
-.up {
+.is-scrolling.direction-up {
     position: sticky;
     top: 30%;
     width: 400px;
@@ -140,9 +140,9 @@ ol{
 }
 @keyframes up {
     from { background-position: 0 0; }
-    to { background-position: 0 -19200px; }
+    to { background-position: 0 -10080px; }
 }
-.down { 
+.is-scrolling.direction-down { 
     position: sticky;
     top: 30%;
     width: 400px;
@@ -157,7 +157,7 @@ ol{
 }
 @keyframes down {
     from { background-position: 0 0; }
-    to { background-position: 0 -19200px; }
+    to { background-position: 0 -10080px; }
 }
 
 .findtitre{
@@ -171,4 +171,15 @@ ol{
 
   .paroles {
     color: #fff;
+  }
+
+  .recherche{
+    border: none;
+    background-color: var(--pourpre);
+    padding: 10px 35px;
+    border-radius: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
   }
