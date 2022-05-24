@@ -21,6 +21,8 @@ sectionArr.forEach(function(section) {
         console.log(titreArr)
         gsap.timeline({
           scrollTrigger: {
+            start: 'top 90%',
+            end: 'bottom 90%',
             trigger: section,
             toggleActions: 'restart complete reverse reset',
           },
